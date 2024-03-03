@@ -105,3 +105,7 @@ public final class {self.file_name} {{
         repository.create_file(f"{self.file_name}.swift", "Initial commit", self.swift_file_contents)
         self.swift_ssh_key = repository.ssh_url
         print(f"SWIFT - Repository key: {repository.ssh_url}")
+
+    def retrieve_ssh_keys(self):
+        print(f"git clone {self.java_ssh_key}; git clone {self.swift_ssh_key}")
+        print("COPy GIT CLONE COMMAND TO CLIPBOARD. OPEN TARGET FOLDER IN TERMINAL AND PASTE.")
