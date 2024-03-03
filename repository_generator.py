@@ -108,4 +108,4 @@ public final class {self.file_name} {{
 
     def retrieve_ssh_keys(self):
         print(f"git clone {self.java_ssh_key}; git clone {self.swift_ssh_key}")
-        print("COPy GIT CLONE COMMAND TO CLIPBOARD. OPEN TARGET FOLDER IN TERMINAL AND PASTE.")
+        print("COPY ABOVE GIT CLONE COMMAND TO CLIPBOARD. OPEN TARGET FOLDER IN TERMINAL AND PASTE.")
