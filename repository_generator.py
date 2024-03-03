@@ -1,5 +1,4 @@
 from github import Github
-import pyperclip
 
 class RepoGenerator:
     def __init__(self, repo_name, file_name, username, authkey, org_name, full_name, date):
@@ -106,7 +105,3 @@ public final class {self.file_name} {{
         repository.create_file(f"{self.file_name}.swift", "Initial commit", self.swift_file_contents)
         self.swift_ssh_key = repository.ssh_url
         print(f"SWIFT - Repository key: {repository.ssh_url}")
-
-    def retrieve_ssh_keys(self):
-        pyperclip.copy(f"git clone {self.java_ssh_key}; git clone {self.swift_ssh_key}")
-        print("COPIED GIT CLONE COMMAND TO CLIPBOARD. OPEN TARGET FOLDER IN TERMINAL AND PASTE.")
