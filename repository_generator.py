@@ -67,11 +67,11 @@ public final class {self.file_name} {{
         # repository = self.github.get_user().create_repo(self.repo_name, private=False)
         repository.create_file("README.md", "Initial commit", read_me_java)
 
-        with open("Java Config\workflow_content.txt", "r") as file:
+        with open("Java Config/workflow_content.txt", "r") as file:
             workflow_content = file.read()
-        with open("Java Config\java_gitignore_content.txt", "r") as file:
+        with open("Java Config/java_gitignore_content.txt", "r") as file:
             gitignore_content = file.read()
-        with open("Java Config\package-info.txt", "r") as file:
+        with open("Java Config/package-info.txt", "r") as file:
             pkg_info = file.read()
 
         repository.create_file(".github/workflows/main.yml", "Initial commit", workflow_content)
