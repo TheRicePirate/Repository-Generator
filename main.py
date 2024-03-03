@@ -30,6 +30,7 @@ def main():
         repo_gen.generate_java_repository()
         repo_gen.generate_swift_repository()
 
+    repo_gen.retrieve_ssh_keys()
 
 def initialize_repo_generator(repository_name, file_name, date):
     data_file_path = os.path.join(os.path.dirname(__file__), "base_info.json")
