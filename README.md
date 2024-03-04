@@ -14,7 +14,7 @@ Repository generator for ICS4U.
 ### SETUP:
 1. Clone this repository into your codespace.
 2. Open a terminal window in the repository's folder and paste this command in: `pip install PyGithub pyperclip`
-4. Run main.py using the command `python main.py`.
+4. Run the program using the command `python main.py`.
 5. Follow the instructions.
 
 ### USE:
