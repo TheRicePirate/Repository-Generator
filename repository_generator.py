@@ -77,8 +77,8 @@ public final class {self.file_name} {{
         repository.create_file(".gitignore", "Initial commit", gitignore_content)
         repository.create_file("com/example/package-info.java", "Initial commit", pkg_info)
         repository.create_file(f"com/example/{self.file_name}.java", "Initial commit", self.java_file_contents)
-        repository.create_file("com/example/input.txt"), "Initial commit", ""
-        repository.create_file("com/example/output.txt"), "Initial commit", ""
+        repository.create_file(("com/example/input.txt"), "Initial commit", "")
+        repository.create_file(("com/example/output.txt"), "Initial commit", "")
 
         self.java_ssh_key = repository.ssh_url
 
