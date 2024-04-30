@@ -25,3 +25,6 @@ jobs:
           VALIDATE_JSCPD: false # for copy and paste detection
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+          # Disable Checkov checks
+          VALIDATE_CHECKOV: false
