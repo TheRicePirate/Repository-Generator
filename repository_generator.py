@@ -106,8 +106,8 @@ public final class {self.file_name} {{
         repository.create_file(".github/workflows/main.yml", "Initial commit", workflow_content)
         repository.create_file(".gitignore", "Initial commit", gitignore_content)
         repository.create_file(f"{self.file_name}.swift", "Initial commit", self.swift_file_contents)
-        repository.create_file("input.txt"), "Initial commit", ""
-        repository.create_file("output.txt"), "Initial commit", ""
+        repository.create_file(("input.txt"), "Initial commit", "")
+        repository.create_file(("output.txt"), "Initial commit", "")
         self.swift_ssh_key = repository.ssh_url
         print(f"SWIFT - Repository key: {repository.ssh_url}")
 
